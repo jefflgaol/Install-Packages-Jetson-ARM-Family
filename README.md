@@ -44,7 +44,7 @@ $ sudo pip3 install llvmlite
 ```
 
 ## Numba Installation
-Before proceeding to the Numba installation, you need to perform LLVM installation first since Numba is heavily rely on LLVM installation.
+Before proceeding to the Numba installation, you need to perform LLVM installation above first since Numba is heavily rely on LLVM installation.
 ```
 sudo pip3 install numba
 ```
@@ -68,7 +68,7 @@ $ sudo ldconfig
 ```
 
 ## ONNX Installation
-Before proceeding to the ONNX installation, you need to perform Protobuf installation first since ONNX heavily relies on Protobuf installation.
+Before proceeding to the ONNX installation, you need to perform Protobuf installation above first since ONNX heavily relies on Protobuf installation.
 ```
 $ sudo pip3 install onnx
 ```
