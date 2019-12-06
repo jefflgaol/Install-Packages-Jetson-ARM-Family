@@ -91,3 +91,22 @@ If you have trouble installing Protobuf, you may take a look at the Protobuf ins
 ```
 $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v411 tensorflow-gpu
 ```
+If you run into a problem when execute the code above:
+```
+Exception:
+Traceback (most recent call last):
+  ...
+  File "/usr/share/python-wheels/requests-2.18.4-py2.py3-none-any.whl/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://developer.download.nvidia.com/compute/redist/jp/v411/grpcio/
+```
+then you should download it manually. Previously, when I executed this ```sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v411 tensorflow-gpu```, it already collected tensorflow-gpu and showed an output like this:
+```
+Collecting tensorflow-gpu
+  Downloading https://developer.download.nvidia.com/compute/redist/jp/v411/tensorflow-gpu/tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl (204.6MB)
+    100% |████████████████████████████████| 204.6MB 4.6kB/s
+```
+So, I downloaded tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl and from the download directory, I ran this inside the terminal:
+```
+$ sudo pip3 install tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl
+```
