@@ -1,5 +1,5 @@
 # Install-Packages-Jetson-ARM Family
-The objective is to give you clear instructions on how to install packages in ARM platform primarily in Jetson family. This instruction was made for Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` to ```sudo python2``` and ```sudo pip``` respectively to make it work with Python 2.
+The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done in Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` to ```sudo python2``` and ```sudo pip``` respectively to make it work in Python 2.
 
 ## Dependencies Installation
 Before performing any installations, you may need to install the basic dependencies first.
@@ -16,14 +16,14 @@ $ sudo apt-get install libboost-all-dev
 $ sudo apt-get install python-numpy
 $ sudo apt-get install build-essential python-dev python-setuptools libboost-python-dev libboost-thread-dev
 ```
-You need to download PyCUDA from https://pypi.org/project/pycuda/#files. In the same directory of your download, run this terminal
+You need to download PyCUDA from https://pypi.org/project/pycuda/#files. In the same directory of your PyCUDA download, run this terminal
 ```
-tar xzvf pycuda-VERSION.tar.gz
-cd pycuda-VERSION
-./configure.py
-make -j4
-sudo python3 setup.py install
-sudo pip3 install .
+$ tar xzvf pycuda-VERSION.tar.gz
+$ cd pycuda-VERSION
+$ ./configure.py
+$ make -j4
+$ sudo python3 setup.py install
+$ sudo pip3 install .
 ```
 
 ## LLVM Installation
@@ -47,13 +47,13 @@ $ sudo pip3 install llvmlite
 ## Numba Installation
 Before proceeding to the Numba installation, you need to perform LLVM installation above first since Numba is heavily rely on LLVM installation.
 ```
-sudo pip3 install numba
+$ sudo pip3 install numba
 ```
 
 ## Protobuf Installation
 You may install Protobuf directly from Python using pip:
 ```
-sudo pip3 install protobuf
+$ sudo pip3 install protobuf
 ```
 If that doesn't work, you may build from source:
 ```
@@ -88,5 +88,5 @@ $ sudo pip3 install -U numpy==1.16.1 future==0.17.1 mock==3.0.5 h5py==2.9.0 kera
 ```
 If you have trouble installing Protobuf, you may take a look at the Protobuf installation part above. If everything's fine, you may proceed. Now, take a look at this https://developer.download.nvidia.com/compute/redist/jp/. You may find a lot of JetPack versions and you need to choose one based on your preference. In this tutorial, I used v33 since it has compatibility with Python 2 installation. 
 ```
-sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v33 tensorflow-gpu
+$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v33 tensorflow-gpu
 ```
