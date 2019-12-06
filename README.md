@@ -76,7 +76,7 @@ $ sudo pip3 install onnx
 
 ## Keras Installation
 ```
-$ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
+$ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev
 $ sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
 $ sudo pip3 install scipy
 $ sudo pip3 install keras
