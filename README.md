@@ -7,6 +7,7 @@ Before performing any installations, you may need to install the basic dependenc
 $ sudo apt-get install cmake
 $ sudo apt-get install python3-pip
 $ sudo pip3 install wget
+$ sudo pip3 install Cython
 ```
 
 ## PyCUDA Installation
