@@ -1,5 +1,5 @@
 # Install-Packages-Jetson-ARM-Family
-The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done in Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` to ```sudo python2``` and ```sudo pip``` respectively to make it work in Python 2.
+The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done under Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` to ```sudo python2``` and ```sudo pip``` respectively to make it work under Python 2.
 
 ## Dependencies Installation
 Before performing any installations, you may need to install the basic dependencies first.
@@ -91,7 +91,7 @@ If you have trouble installing Protobuf, you may take a look at the Protobuf ins
 ```
 $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v411 tensorflow-gpu
 ```
-If you run into a problem when execute the code above:
+If you run into a problem when execute the code above like this:
 ```
 Exception:
 Traceback (most recent call last):
@@ -100,7 +100,7 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://developer.download.nvidia.com/compute/redist/jp/v411/grpcio/
 ```
-then you should download it manually. Previously, when I executed this ```sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v411 tensorflow-gpu```, it already collected tensorflow-gpu and showed an output like this:
+then you should download the Tensorflow installation manually. Previously, when I executed this ```sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v411 tensorflow-gpu```, it already collected tensorflow-gpu and showed an output like this:
 ```
 Collecting tensorflow-gpu
   Downloading https://developer.download.nvidia.com/compute/redist/jp/v411/tensorflow-gpu/tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl (204.6MB)
