@@ -20,6 +20,9 @@ You need to download PyCUDA from https://pypi.org/project/pycuda/#files. In the 
 ```
 $ tar xzvf pycuda-VERSION.tar.gz
 $ cd pycuda-VERSION
+```
+Go to configure.py and change the /usr/bin/env python into /usr/bin/env python3
+```
 $ ./configure.py
 $ make -j4
 $ sudo python3 setup.py install
