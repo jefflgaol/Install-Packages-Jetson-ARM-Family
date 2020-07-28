@@ -1,5 +1,5 @@
 # Install-Packages-Jetson-ARM-Family
-The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done under Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` to ```sudo python2``` and ```sudo pip``` respectively to make it work under Python 2.
+The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done under Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` into ```sudo python2``` and ```sudo pip```, respectively, to make it work under Python 2.
 
 ## Dependencies Installation
 Before performing any installations, you may need to install the basic dependencies first.
@@ -21,7 +21,7 @@ You need to download PyCUDA from https://pypi.org/project/pycuda/#files. In the 
 $ tar xzvf pycuda-VERSION.tar.gz
 $ cd pycuda-VERSION
 ```
-Go to configure.py and change the /usr/bin/env python into /usr/bin/env python3
+Open configure.py and change the /usr/bin/env python into /usr/bin/env python3
 ```
 $ ./configure.py
 $ make -j4
