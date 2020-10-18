@@ -44,7 +44,7 @@ $ cd bin/
 $ echo "export LLVM_CONFIG=\""`pwd`"/llvm-config\"" >> ~/.bashrc
 $ echo "alias llvm='"`pwd`"/llvm-lit'" >> ~/.bashrc
 $ source ~/.bashrc
-$ sudo pip3 install llvmlite
+$ sudo pip3 install llvmlite==0.30.0
 ```
 
 ## Numba Installation
