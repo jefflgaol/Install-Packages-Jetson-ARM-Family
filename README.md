@@ -113,3 +113,14 @@ So, I downloaded tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl. F
 ```
 $ sudo pip3 install tensorflow_gpu-1.13.0rc0+nv19.2-cp36-cp36m-linux_aarch64.whl
 ```
+
+## TBB issues
+https://github.com/jefflgaol/Install-Packages-Jetson-ARM-Family/issues/2
+Thank you for surefyyq for the solution regarding the TBB issue.
+```
+$ git clone https://github.com/wjakob/tbb.git
+$ cd tbb/build
+$ cmake ..
+$ make -j
+$ sudo make install
+```
