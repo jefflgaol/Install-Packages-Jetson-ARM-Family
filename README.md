@@ -61,8 +61,14 @@ $ cd bin/
 $ echo "export LLVM_CONFIG=\""`pwd`"/llvm-config\"" >> ~/.bashrc
 $ echo "alias llvm='"`pwd`"/llvm-lit'" >> ~/.bashrc
 $ source ~/.bashrc
-$ sudo pip3 install llvmlite
-$ sudo pip3 install numba
+$ cd
+$ git clone https://github.com/wjakob/tbb.git
+$ cd tbb/build
+$ cmake ..
+$ make -j
+$ sudo make install
+$ pip3 install llvmlite
+$ pip3 install numba
 ```
 
 ## Protobuf Installation
